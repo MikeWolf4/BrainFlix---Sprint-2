@@ -3,10 +3,10 @@
     flex-direction: column;
     height: auto;
     width: 100%;
-    
+    max-width: 300px;
     @media (min-width: 1440px) {
         position: relative;
-        bottom: 1505px;
+        bottom: 1405px;
         left:905px;
         
         border-left: 1px solid grey;

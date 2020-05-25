@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 
 class Header extends Component {
     state = {  }
     render() { 
+        
         return <div className="header-container">
-            <div className="header__logo-container">
-                <img className="header__logo" src={require("../assets/Logo/Logo-brainflix.svg")} alt="BrainFlix Logo"/>
-            </div>
+            <Link className="header__logo-container" to="/main/1af0jruup5gu/">
+                <div className="header__logo-container">
+                    <img className="header__logo" src={require("../assets/Logo/Logo-brainflix.svg")} alt="BrainFlix Logo"/>
+                </div>
+            </Link>
 
 
 
@@ -19,11 +23,12 @@ class Header extends Component {
 
 
 
-
-            <div className="header__upload-container">
-                <a className="header__upload-button" href=""><img className="header__upload-button-plus" src={require("../assets/Icons/SVG/Icon-upload.svg")} alt=""/>Upload</a>
-                <img className="header__upload-icon" src={require("../assets/Images/Mohan-muruge.jpg")} alt=""/>
-            </div>
+            <Link className="header__upload-container" to="/upload/">
+                <div className="header__upload-container">
+                    <div className="header__upload-button" href=""><img className="header__upload-button-plus" src={require("../assets/Icons/SVG/Icon-upload.svg")} alt=""/>Upload</div>
+                    <img className="header__upload-icon" src={require("../assets/Images/Mohan-muruge.jpg")} alt=""/>
+                </div>
+            </Link>
         </div>;
     }
 }
