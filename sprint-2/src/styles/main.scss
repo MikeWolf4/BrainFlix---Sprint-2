@@ -1,13 +1,16 @@
-@import "./partials/breakpoints";
+
 @import "./partials/header";
-@import "./partials/footer";
-@import "./partials/mainContent";
+@import "./partials/mainVideo";
 @import "./partials/videolist";
 @import "./partials/variables";
 @import "./partials/fonts";
 @import "./partials/upload";
+@import "./partials/comments";
 * {
   box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 

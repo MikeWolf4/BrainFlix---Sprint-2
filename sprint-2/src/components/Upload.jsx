@@ -8,10 +8,11 @@ class Upload extends Component {
             
             <h1 className="upload-main__title">Upload Video</h1>
             {/* IMG / INPUT CONTAINER */}
-            <div>
+            <div className="upload-main__box-borders">
                 {/* IMAGE */}
                 <div className="upload-main__image-container">
-                    <img className="upload-main__image" src={require("../assets/Images/Upload-video-preview.jpg")} alt=""/>
+                    <label className="upload-main__label-title" htmlFor="id">VIDEO THUMBNAIL</label>
+                    <img id="img" className="upload-main__image" src={require("../assets/Images/Upload-video-preview.jpg")} alt=""/>
                 </div>
                 {/* IMAGE */} 
                 {/* INPUT */}

@@ -28,17 +28,8 @@ class MainVideoDetails extends Component {
             <div className="main-video-details__desc-container">
                 <p className="main-video-details__description">{this.props.videoDetails.description}</p>
             </div>
-            {/* comment section here */}
-            
         </div>;
-        
-        
-    }
-
-    getDetails() {
-       
     }
 }
  
 export default MainVideoDetails;
-//<p>{this.props.videoDetails.id}</p>

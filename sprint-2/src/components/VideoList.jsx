@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import VideoCard from './VideoCard';
 
-
-
-
-
 class VideoList extends Component {
     state = { }
     render() { 
@@ -16,8 +12,6 @@ class VideoList extends Component {
     }
    
 }
-
-
 
 export default VideoList;
 

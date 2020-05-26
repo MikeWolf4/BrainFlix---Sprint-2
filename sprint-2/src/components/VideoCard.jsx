@@ -9,12 +9,10 @@ class VideoCard extends Component {
         window.scrollTo(0, 0)
         
         return <Link  to={"/main/"  + (this.props.id)} >
-            {/* to={"/main/"  + (this.props.videoChannel)} */}
             <div className="videocard">
                 <div className="videocard__img-container">
                 <img className="videocard__img" src={this.props.videoImage} alt="video thumbnail"/>
                 </div>
-            
                 <div className="videocard__channel-title-container">
                     <h4 className="videocard__title">{this.props.videoTitle}</h4>
                     <h4 className="videocard__channel">{this.props.videoChannel}</h4>

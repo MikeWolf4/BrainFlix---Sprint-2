@@ -75,7 +75,13 @@ overflow: hidden;
     &__title{// main video details - title
       display: flex;
       margin-top: 32px;
-      //border: 1px solid orange;
+      @include fontaddin(
+            $m_H1Header_FSize,
+            $m_H1Header_LHeight,
+            $fontAvenirBold,
+            $clrBandSiteCtaTextLink
+        );
+      
     }
     &__divider{
       border-bottom: 2px solid $clrGlobalTextLabelStyle;
@@ -169,30 +175,30 @@ overflow: hidden;
 .h1sect {
   //border: 2px solid red;
   margin: 40px 0px 0px 0px;
-  // @include fontaddin(
-  //   $m_H1Header_FSize,
-  //   $m_H1Header_LHeight,
-  //   $fontAvenirBold,
-  //   $global_TextColor
-  // );
+  @include fontaddin(
+    $m_H1Header_FSize,
+    $m_H1Header_LHeight,
+    $fontAvenirBold,
+    $global_TextColor
+  );
   font-weight: 900;
   @media (min-width: 768px) {
-    // @include fontaddin(
-    //   $h1Header_FSize,
-    //   $h1Header_LHeight,
-    //   $fontAvenirBold,
-    //   $global_TextColor
-    // );
+    @include fontaddin(
+      $h1Header_FSize,
+      $h1Header_LHeight,
+      $fontAvenirBold,
+      $global_TextColor
+    );
     position: relative;
     left: 8px;
   }
   @media (min-width: 1440px) {
-    // @include fontaddin(
-    //   $h1Header_FSize,
-    //   $h1Header_LHeight,
-    //   $fontAvenirBold,
-    //   $global_TextColor
-    // );
+    @include fontaddin(
+      $h1Header_FSize,
+      $h1Header_LHeight,
+      $fontAvenirBold,
+      $global_TextColor
+    );
     position: relative;
     left: 165px;
   }
@@ -272,12 +278,12 @@ overflow: hidden;
     top:0px;
     left: 60px;
     right: 0px;
-    // @include fontaddin(
-    //   $m_H2Subheader_FSize,
-    //   $m_H2Subheader_LHeight,
-    //   $fontAvenirBold,
-    //   $global_TextColor
-    // );
+    @include fontaddin(
+      $m_H2Subheader_FSize,
+      $m_H2Subheader_LHeight,
+      $fontAvenirBold,
+      $global_TextColor
+    );
     font-weight: 700;
     //display: inline-flex;
 
@@ -300,19 +306,18 @@ overflow: hidden;
     bottom: 55px;
     left: 60px;
     right: 0px;
-    // @include fontaddin(
-    //   $m_H5Label_FSize,
-    //   $m_H5Label_LHeight,
-    //   $fontAvenirBold,
-    //   $global_TextColor
-    // );
+    @include fontaddin(
+      $m_H5Label_FSize,
+      $m_H5Label_LHeight,
+      $fontAvenirBold,
+      $global_TextColor
+    );
     display: inline-flex;
     margin: 0;
     word-wrap: break-word;
     width: 230px;
     min-height: 100px;
-    //border: 2px solid green;
-    //margin-left: 15%;
+    
 
     @media (min-width: 768px) {
       width: 624px;
@@ -335,12 +340,12 @@ overflow: hidden;
     right: 0px;
     margin-right: 0;
     padding-right: 0;
-    // @include fontaddin(
-    //   $m_H2Subheader_FSize,
-    //   $m_H2Subheader_LHeight,
-    //   $fontAvenirBold,
-    //   $clrGlobalTextLabelStyle
-    // );
+    @include fontaddin(
+      $m_H2Subheader_FSize,
+      $m_H2Subheader_LHeight,
+      $fontAvenirBold,
+      $clrGlobalTextLabelStyle
+    );
     @media (min-width: 768px){
       bottom: 55px;
       left: 310px;
@@ -365,12 +370,12 @@ overflow: hidden;
   left: 62px;
   right: 0px;
 
-  // @include fontaddin(
-  //   $m_H5Label_FSize,
-  //   $m_H5Label_LHeight,
-  //   $fontAvenirBold,
-  //   $global_TextColor
-  // );
+  @include fontaddin(
+    $m_H5Label_FSize,
+    $m_H5Label_LHeight,
+    $fontAvenirBold,
+    $global_TextColor
+  );
   font-weight: 600;
   color: $clrGlobalTextLabelStyle;
   @media (min-width: 768px){
@@ -392,12 +397,12 @@ overflow: hidden;
   bottom: 30px;
   left: 62px;
   right: 0px;
-  // @include fontaddin(
-  //   $m_H5Label_FSize,
-  //   $m_H5Label_LHeight,
-  //   $fontAvenirBold,
-  //   $global_TextColor
-  // );
+  @include fontaddin(
+    $m_H5Label_FSize,
+    $m_H5Label_LHeight,
+    $fontAvenirBold,
+    $global_TextColor
+  );
   font-weight: 600;
   color: $clrGlobalTextLabelStyle;
   @media (min-width: 768px){
@@ -428,7 +433,7 @@ overflow: hidden;
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center;
-    //background-color: $clrGlobalTextFieldBorder;
+    background-color: $clrGlobalTextFieldBorder;
     @media (min-width: 768px) {
       position: relative;
       top: 45px;
@@ -451,12 +456,12 @@ overflow: hidden;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 20px;
-    // @include fontaddin(
-    //   $m_H5Label_FSize,
-    //   $m_H5Label_LHeight,
-    //   $fontAvenirBold,
-    //   $global_TextColor
-    // );
+    @include fontaddin(
+      $m_H5Label_FSize,
+      $m_H5Label_LHeight,
+      $fontAvenirBold,
+      $global_TextColor
+    );
     border-radius: 4px;
     border: 2px solid $clrGlobalTextLabelStyle;
     height: 96px;
@@ -548,7 +553,6 @@ overflow: hidden;
   &__controls {
     position: absolute;
     z-index: 99;
-    //top: 5rem;
     bottom: 0.375rem;
     margin-right: 1px;
     margin-left: 1px;
